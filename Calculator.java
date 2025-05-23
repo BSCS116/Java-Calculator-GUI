@@ -24,7 +24,7 @@ public class Calculator implements ActionListener {
         frame.setLayout(null);
 
         textField = new JTextField();
-        textField.setBounds(50, 25, 300, 50);
+        textField.setBounds(0,25, 362, 50);
         textField.setFont(myFont);
         textField.setEditable(false);
 
@@ -60,13 +60,39 @@ public class Calculator implements ActionListener {
             numberButtons[i].setFocusable(false);
         }
 
-        delButton.setBounds(50, 430, 145,50);
-        clrButton.setBounds(205, 430, 145, 50);
+        delButton.setBounds(0, 430, 170,50);
+        clrButton.setBounds(192, 430, 170, 50);
 
         panel = new JPanel();
-        panel.setBounds(50, 100, 300, 300);
+        panel.setBounds(0, 100, 362, 300);
         panel.setLayout(new GridLayout(4,4,10,10));
         panel.setBackground(Color.GRAY);
+        functionButtons[0].setBackground(Color.yellow);
+        functionButtons[1].setBackground(Color.yellow);
+        functionButtons[2].setBackground(Color.yellow);
+        functionButtons[3].setBackground(Color.yellow);
+        functionButtons[4].setBackground(Color.yellow);
+        functionButtons[5].setBackground(Color.GREEN);
+        functionButtons[6].setBackground(Color.red);
+        functionButtons[7].setBackground(Color.red);
+
+
+
+        numberButtons[1].setBackground(Color.CYAN);
+        numberButtons[2].setBackground(Color.CYAN);
+        numberButtons[3].setBackground(Color.CYAN);
+        numberButtons[3].setBackground(Color.CYAN);
+        numberButtons[4].setBackground(Color.CYAN);
+        numberButtons[5].setBackground(Color.CYAN);
+        numberButtons[6].setBackground(Color.CYAN);
+        numberButtons[7].setBackground(Color.CYAN);
+        numberButtons[8].setBackground(Color.CYAN);
+        numberButtons[9].setBackground(Color.CYAN);
+        numberButtons[0].setBackground(Color.CYAN);
+
+
+
+
 
 
         panel.add(numberButtons[1]);
